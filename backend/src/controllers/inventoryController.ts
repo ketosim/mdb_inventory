@@ -28,33 +28,30 @@ export class InventoryController {
 
     async getProducts(req: Request, res: Response) {
         try {
+            // First, let's check if there are any products at all
+            const countCheck = await pool.query(`SELECT COUNT(*) FROM products`);
+            console.log('Total products in database:', countCheck.rows[0].count);
+            
+            // Modified query with LEFT JOINs
             const result = await pool.query(`
                 SELECT 
                     p.code,
                     p.description,
-                    u1.name as "walkUnit",
+                    COALESCE(u1.name, 'unit') as "walkUnit",
                     p.pack_size as "packSize",
                     p.base_weekly_usage as "baseWeeklyUsage"
                 FROM products p
-                JOIN product_units pu ON p.code = pu.product_code
-                JOIN units u1 ON pu.walk_unit_id = u1.id
+                LEFT JOIN product_units pu ON p.code = pu.product_code
+                LEFT JOIN units u1 ON pu.walk_unit_id = u1.id
                 WHERE p.is_active = true
                 ORDER BY p.code
             `);
             
-            console.log('All Products from DB:');
-            result.rows.forEach(product => {
-                console.log(`Product: ${product.code} - ${product.description}`);
-                console.log('Details:', product);
-                console.log('------------------------');
-            });
-    
-            console.log(`Total products found: ${result.rows.length}`);
-            
+            console.log('Products query executed, row count:', result.rows.length);
             res.json(result.rows);
         } catch (error) {
             console.error('Error fetching products:', error);
-            res.status(500).json({ error: 'Failed to fetch products' });
+            res.status(500).json({ error: 'Failed to fetch products', details: (error as Error).message });
         }
     }
 
