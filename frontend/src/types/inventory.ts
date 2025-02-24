@@ -7,6 +7,7 @@ export interface Product {
     baseWeeklyUsage: number;
 }
 
+
 export interface InventorySession {
     sessionId: string;
     salesLevel: number;
