@@ -47,14 +47,14 @@ api.interceptors.response.use(
 export const inventoryApi = {
     startSession: async (salesLevel: number): Promise<InventorySession> => {
         try {
-            const response = await api.post<InventorySession>('/api/inventory/session', {
+            const response = await api.post<{sessionId: string}>('/api/inventory/session', {
                 salesLevel
             });
+
             if (!response.data?.sessionId) {
                 throw new Error('Invalid session response format');
             }
 
-            // Return the data in the format expected by InventorySession
             return {
                 sessionId: response.data.sessionId,
                 salesLevel,
@@ -70,7 +70,20 @@ export const inventoryApi = {
     getProducts: async (): Promise<Product[]> => {
         try {
             const response = await api.get<Product[]>('/api/products');
-            return response.data;
+            console.log('Products response:', response.data); // Debug log
+            
+            if (!Array.isArray(response.data)) {
+                throw new Error('Invalid products response format - expected array');
+            }
+
+            // Map the response to match the Product interface
+            return response.data.map(product => ({
+                code: product.code,
+                description: product.description,
+                walkUnit: product.walkUnit,
+                packSize: product.packSize,
+                baseWeeklyUsage: product.baseWeeklyUsage
+            }));
         } catch (error) {
             console.error('Failed to fetch products:', error);
             throw error;
@@ -88,7 +101,15 @@ export const inventoryApi = {
                 productCode,
                 quantity
             });
-            return response.data;
+
+            if (!response.data || !response.data.productCode) {
+                throw new Error('Invalid count response format');
+            }
+
+            return {
+                productCode: response.data.productCode,
+                quantity: response.data.quantity
+            };
         } catch (error) {
             console.error('Failed to record count:', error);
             throw error;
@@ -98,6 +119,9 @@ export const inventoryApi = {
     getOrderSummary: async (sessionId: string): Promise<any> => {
         try {
             const response = await api.get(`/api/inventory/orders/${sessionId}`);
+            if (!response.data) {
+                throw new Error('No order summary data received');
+            }
             return response.data;
         } catch (error) {
             console.error('Failed to fetch order summary:', error);
