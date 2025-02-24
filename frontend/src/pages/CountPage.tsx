@@ -29,9 +29,9 @@ const CountPage: React.FC = () => {
             console.log('Fetching products...');
             const response = await inventoryApi.getProducts();
             console.log('Response:', response);
-            if (response.data) {
-                setProducts(response.data);
-                setFilteredProducts(response.data); // Ensure filteredProducts is set initially
+            if (response) {
+                setProducts(response);
+                setFilteredProducts(response); // Ensure filteredProducts is set initially
             }
         } catch (error) {
             console.error('Failed to load products:', error);
