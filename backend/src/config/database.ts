@@ -1,8 +1,11 @@
 //backend/src/config/database.ts
+import 'dotenv/config';  // Ensures process.env is populated early
 import { Pool } from 'pg';
-import dotenv from 'dotenv';
 
-dotenv.config(); // Load environment variables
+// Ensure DATABASE_URL is defined
+if (!process.env.DATABASE_URL) {
+  throw new Error("❌ DATABASE_URL is missing from environment variables!");
+}
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL, // Use DATABASE_URL from .env

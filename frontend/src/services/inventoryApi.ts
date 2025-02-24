@@ -1,8 +1,7 @@
 //src/services/inventoryApi.ts
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api';  // Match backend port
-
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api'; // Use backend URL
 
 export const inventoryApi = {
     // Start a new counting session
