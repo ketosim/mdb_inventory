@@ -12,8 +12,8 @@ const StartCount: React.FC = () => {
         setIsLoading(true);
         try {
             const session = await inventoryApi.startSession(level);
-            if (session?.id) {
-                navigate(`/count/${session.id}`);
+            if (session?.sessionId) {
+                navigate(`/count/${session.sessionId}`);
             } else {
                 throw new Error('No session ID received');
             }

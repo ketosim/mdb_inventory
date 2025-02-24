@@ -1,4 +1,4 @@
-// Basic data types for our application
+//frontend/src/types/inventory.ts
 export interface Product {
     code: string;
     description: string;
@@ -8,7 +8,7 @@ export interface Product {
 }
 
 export interface InventorySession {
-    id: string;
+    sessionId: string;
     salesLevel: number;
     status: 'in_progress' | 'completed';
     createdAt: Date;

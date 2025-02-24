@@ -50,7 +50,17 @@ export const inventoryApi = {
             const response = await api.post<InventorySession>('/api/inventory/session', {
                 salesLevel
             });
-            return response.data;
+            if (!response.data?.sessionId) {
+                throw new Error('Invalid session response format');
+            }
+
+            // Return the data in the format expected by InventorySession
+            return {
+                sessionId: response.data.sessionId,
+                salesLevel,
+                status: 'in_progress',
+                createdAt: new Date()
+            };
         } catch (error) {
             console.error('Failed to start session:', error);
             throw error;
