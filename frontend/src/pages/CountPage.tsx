@@ -65,13 +65,9 @@ const CountPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
-            {/* Header */}
-            <div className="bg-blue-600 text-white text-lg font-semibold py-4 px-6 text-center">
-                Inventory Count
-            </div>
-
-            {/* Search Bar */}
-            <div className="p-4">
+            {/* Fixed Header & Search Bar */}
+            <div className="bg-white shadow-md p-4 sticky top-0 left-0 right-0 z-10">
+                <h1 className="text-xl font-bold text-center mb-2">Inventory Count</h1>
                 <div className="relative flex items-center">
                     <input
                         type="text"
@@ -91,8 +87,8 @@ const CountPage: React.FC = () => {
                 </div>
             </div>
 
-            {/* Product List */}
-            <div className="flex-1 overflow-y-auto px-4 space-y-4">
+            {/* Scrollable Product List */}
+            <div className="flex-1 overflow-y-auto px-4 space-y-4 mt-2">
                 {filteredProducts.length === 0 ? (
                     <div className="text-center text-gray-500 mt-10">No products found.</div>
                 ) : (

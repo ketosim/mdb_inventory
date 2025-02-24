@@ -16,18 +16,22 @@ const Login: React.FC = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <div className="p-4 bg-white shadow-md rounded">
-                <h1 className="text-2xl mb-4">Login</h1>
+            <div className="w-full max-w-xs bg-white shadow-lg rounded-lg p-6">
+                <h1 className="text-2xl font-semibold text-center mb-6">Login</h1>
+                
+                {/* Input Box */}
                 <input
                     type="password"
-                    placeholder="Enter yeastman"
+                    placeholder="Enter password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full p-2 border rounded mb-4"
+                    className="w-full p-3 border border-gray-300 rounded-lg text-center"
                 />
+
+                {/* Login Button */}
                 <button
                     onClick={handleLogin}
-                    className="w-full bg-blue-500 text-white p-2 rounded"
+                    className="w-full bg-blue-500 text-white py-3 mt-4 rounded-lg text-lg font-medium active:scale-95 transition"
                 >
                     Login
                 </button>
