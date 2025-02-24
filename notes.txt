@@ -1,0 +1,2 @@
+leave a session,  reload numebrs are still there.
+dont want to restart walk and count 

@@ -1,0 +1,125 @@
+code,codeInt,category,description,packSize,walkUnit,orderUnit,weeklyUsage
+1006E,1006,General Foods,Base Gluten Free,21,box,box,2.8571
+1008C,1008,General Foods,Base Thin and Crispy,60,box,box,4.0000
+1009,1009,General Foods,"Base 12.5"" Thin and Crispy",60,box,box,0.5000
+1021D,1021,General Foods,Semolina,12.5,bag,bag,0.0400
+1029C,1029,General Foods,"10"" Tortillas",72,box,box,0.2083
+1032C,1032,General Foods,Yeast,10,box,box,0.5200
+1048H,1048,General Foods,Premix Classic,12.5,bag,bag,35.0000
+1050A,1050,General Foods,Doughnut Mix 12.5kg,12.5,bag,bag,1.0000
+1051A,1051,General Foods,Lava Powder,3,bag,box,0.0000
+1304A,1304,General Foods,Sauce Aioli PCU (Garlic Parmesan),192,box,box,0.3125
+1312,1312,General Foods,Chicken Seasoned,12,box,box,2.5000
+1319,1319,General Foods,Chicken Nuggets,5,kg,box,0.6000
+1320H,1320,General Foods,Sauce Pizza,18,box,box,8.3333
+1322B,1322,General Foods,Sauce Hollandaise,3,box,box,0.6667
+1326B,1326,General Foods,Sauce Garlic,8,box,box,0.7500
+1329B,1329,General Foods,Sauce BBQ Hickory,8,box,box,0.5000
+1331,1331,General Foods,Sauce Peri Peri,3,box,box,4.3333
+1335E,1335,General Foods,Sauce Mayonnaise,8,box,box,0.5000
+1338D,1338,General Foods,Sauce Butter Chicken,10,box,box,1.5000
+1339,1339,General Foods,Sauce Tomato Ketchup,3,box,box,0.3333
+1345D,1345,General Foods,Sauce Creme Fraiche,5,box,box,2.0000
+1348C,1348,General Foods,Salt Pizza,0.5,bag,bag,2.0000
+1359D,1359,General Foods,Sauce Tomato Capsicum,8,box,box,0.5000
+1369,1369,General Foods,Sauce Franks Hot,15.12,box,box,0.0463
+1370E,1370,General Foods,Chicken Wings,12,box,box,2.0000
+1382,1382,General Foods,Sauce Sweet and Sour PCU,192,box,box,0.2083
+1385,1385,General Foods,Sauce Sriracha Mayo PCU,192,box,box,0.4688
+1394C,1394,General Foods,Chicken Bites Spicy,9,box,box,1.6667
+1401B,1401,General Foods,Chicken Tenders,8,box,box,1.7500
+1600J,1600,General Foods,Cheese Mozzarella,9.1,box,box,28.5714
+1605B,1605,General Foods,Cheese American Burger,9.08,box,box,0.4956
+1620A,1620,General Foods,Sauce Cheese,5,box,box,0.6000
+1625C,1625,General Foods,Cheese String,9,box,box,1.2222
+1626B,1626,General Foods,Cheese Vegan,5,box,box,1.0000
+1627A,1627,General Foods,Cheese Sprinkle,0.5,bag,bag,1.0000
+1628,1628,General Foods,Cheese Mexi Shred Three Blend,6,bag,box,0.6667
+1655E,1655,General Foods,Cheese Camembert,1.5,box,box,1.3333
+1690B,1690,General Foods,Crumbled Feta,3,box,box,2.0000
+1691,1691,General Foods,Cheese Paneer,3,box,box,1.6667
+1900B,1900,General Foods,Anchovies,12,box,box,0.1250
+1903A,1903,General Foods,Sausage Italian,12,box,box,1.5000
+1905A,1905,General Foods,Pineapple,6,tin,box,1.5000
+1906C,1906,General Foods,Icing Sugar,0.5,bag,bag,0.5000
+1925E,1925,General Foods,Beef Ground,14,box,box,1.3571
+1930F,1930,General Foods,Ham,12,box,box,1.0833
+1935C,1935,General Foods,Pepperoni,12,box,box,2.0833
+1949F,1949,General Foods,Bacon Rasher,12,box,box,1.0833
+1950B,1950,General Foods,Olives,10,box,box,0.6000
+1962A,1962,General Foods,SF CKD PEELED PRAWN 45/55,10,bag,box,0.5000
+1964B,1964,General Foods,Three Cheese Bite,6,bag,box,0.6667
+1965G,1965,General Foods,Lava Cakes PCU,45,box,box,1.1111
+1967D,1967,General Foods,Sauce BBQ,18,box,box,1.1111
+1973E,1973,General Foods,Green Jalapenos,3,tin,box,2.0000
+1975B,1975,General Foods,Pickles,6,tin,box,0.3333
+1977D,1977,General Foods,Chips,12,box,box,1.5833
+1984B,1984,General Foods,Oregano,0.2,bag,bag,2.0000
+1985B,1985,General Foods,Sauce Garlic Butter Swirl,4,box,box,1.7500
+1987C,1987,General Foods,Dessert Butter,4,box,box,0.3750
+1998,1998,General Foods,Chilli Flakes,0.75,bag,bag,1.5000
+2005,2005,General Foods,Onion Rings,4,bag,box,0.5000
+2006,2006,General Foods,Sauce Spicy Halloween,8,bag,box,0.0000
+2500A,2500,General Foods,Bread Garlic,56,box,box,8.9286
+2506A,2506,General Foods,Bread Cheesy Garlic,40,box,box,2.2500
+2512A,2512,General Foods,Dominos Napoli Penne,30,box,box,0.3333
+2513A,2513,General Foods,Pasta Mac and Cheese,30,box,box,0.6667
+3301,3301,Drinks,Red Bull 250ml Can,24,can,pack,0.4167
+3303,3303,Drinks,Red Bull 4pk,6,can,pack,0.0000
+3307,3307,Drinks,7UP 600ml Bottle,24,pack,pack,0.8750
+3308,3308,Drinks,Mountain Dew 600ml Bottle,24,pack,pack,1.8750
+3309,3309,Drinks,Pepsi 600ml Bottle,24,pack,pack,4.1667
+3310A,3310,Drinks,Water Cool Ridge 600ml,24,pack,pack,5.0000
+3311,3311,Drinks,Pepsi Max 600ml Bottle,24,pack,pack,2.0833
+3312,3312,Drinks,Solo 600ml Bottle,24,pack,pack,0.8333
+3313,3313,Drinks,Sunkist 600ml Bottle,24,pack,pack,1.2083
+3345A,3345,Drinks,Pepsi 1.25l Bottle,12,box,box,11.6667
+3350A,3350,Drinks,Pepsi Max 1.25l Bottle,12,box,box,5.1667
+3355A,3355,Drinks,Mountain Dew 1.25l Bottle,12,box,box,3.3333
+3360A,3360,Drinks,7UP 1.25l Bottle,12,box,box,2.9167
+3365A,3365,Drinks,Solo 1.25l Bottle,12,box,box,2.1667
+3370A,3370,Drinks,Sunkist 1.25l Bottle,12,box,box,2.6667
+3400,3400,General Foods,Oil Vegetable,15,bottle,bottle,0.3333
+4002,4002,Packaging,Box My Dominos,100,pack,pack,1.6000
+4004B,4004,Packaging,Box Meltz,100,pack,pack,0.1000
+4007A,4007,General Foods,Sauce Chocolate PCU,180,box,box,0.2778
+4014D,4014,Packaging,Box Pizza Pasta,100,pack,pack,2.0000
+4019I,4019,Packaging,Box Sides,400,pack,box,0.7500
+4023A,4023,Packaging,Paper Dessert,1000,each,pack,0.0100
+4033B,4033,Consumables,Foil Sheet,2000,box,box,0.2500
+4035G,4035,Packaging,Bag Garlic Bread,2000,box,box,0.0250
+4039J,4039,Packaging,Bag Paper Carry,250,box,box,1.0000
+4071D,4071,Packaging,Box Cheesy Garlic Bread,100,pack,pack,1.5000
+4090,4090,Consumables,Fork (Wooden),1000,box,box,0.1000
+4305H,4305,Packaging,"Box Pizza 10"" (Rocket Science)",55,pack,pack,40.0000
+4325D,4325,Packaging,Box Pizza XLarge,55,pack,pack,4.9091
+4454D,4454,Consumables,Paper Towel,4000,box,box,0.0000
+4460E,4460,Consumables,Paper Napkin,6000,box,box,0.0000
+4461A,4461,Consumables,Paper Napkin Dispenser,1,box,each,0.0000
+5546B,5546,Consumables,Paper Parchment,500,box,pack,0.1000
+6100B,6100,General Foods,Brownie Chocolate,432,box,box,0.5556
+6101B,6101,General Foods,Churros,200,box,box,0.7000
+6110,6110,General Foods,Pancakes Mini,448,box,box,0.5357
+6112B,6112,General Foods,Triple Choc Cookie Puck,12.5,box,box,0.0000
+6113,6113,General Foods,Cream Cheese Glaze,10,box,box,0.3000
+6117,6117,General Foods,Tinmax,5,bag,bag,0.5000
+6151B,6151,General Foods,Cinnamon Sugar,1,bag,bag,0.5000
+6161C,6161,General Foods,Cookie Crumb,0.45,bag,bag,1.0000
+6216,6216,General Foods,Mousse Chocolate and Salted Caramel,36,box,box,0.5556
+8002,8002,Consumables,Gloves Small,1000,box,box,0.0000
+8003,8003,Consumables,Gloves XLarge,1000,box,box,0.0000
+8006,8006,Consumables,Gloves Medium,1000,box,box,1.0000
+8007,8007,Consumables,Gloves Large,1000,box,box,0.0000
+8022,8022,Consumables,Gloves LDPE Small,5000,box,box,0.0000
+8023,8023,Consumables,Gloves LDPE Medium,5000,box,box,0.0000
+8038E,8038,Consumables,Merriwipe Roll,4,box,box,1.0000
+8039,8039,Consumables,Bag Rubbish 73 Litre,25,pack,pack,0.8000
+8040,8040,Consumables,Bag Rubbish 120 Litre,25,pack,box,0.0000
+8041A,8041,Consumables,Bag Rubbish 240 Litre,100,pack,box,0.2500
+8865A,8865,Consumables,Paper Printer Rolls,50,box,box,0.0000
+8871A,8871,Consumables,Paper Thermal Printer Rolls,50,box,box,0.5000
+9500B,9500,General Foods,Milo (inner),1.25,tin,tin,0.5000
+9501C,9501,General Foods,Vanilla Malt Powder,1.5,tin,tin,0.5000
+9503A,9503,General Foods,Dairy Soft Vanilla,9.5,tub,tub,1.0000
+9504B,9504,General Foods,Cream Whipped,6,can,box,0.3333
+9507,9507,General Foods,Sauce Salted Caramel,4.5,box,box,0.2000
