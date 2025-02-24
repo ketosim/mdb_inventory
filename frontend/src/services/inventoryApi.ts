@@ -1,6 +1,6 @@
 //src/services/inventoryApi.ts
 import axios from 'axios';
-const API_URL = process.env.REACT_APP_API_URL?.replace(/\/$/, '') || 'http://localhost:3001';
+const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:3001').replace(/\/+$/, '');
 
 export const inventoryApi = {
     // Start a new counting session
