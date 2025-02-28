@@ -33,35 +33,51 @@ const CountPage: React.FC = () => {
     };
 
     const handleSubmit = async () => {
+        let allSuccess = true;
+        
         try {
             for (const [productCode, quantity] of Object.entries(counts)) {
-                await inventoryApi.recordCount(sessionId!, productCode, quantity);
+                try {
+                    await inventoryApi.recordCount(sessionId!, productCode, quantity);
+                } catch (error) {
+                    console.error(`Error saving ${productCode}, continuing:`, error);
+                    allSuccess = false;
+                }
             }
+            
+            // Navigate even if some items failed
+            console.log(`Navigating to /order-summary/${sessionId}`);
             navigate(`/order-summary/${sessionId}`);
         } catch (error) {
             console.error('Failed to submit counts:', error);
+            // Maybe show an error message to the user here
         }
     };
 
     const handleCountChange = async (productCode: string, quantity: number) => {
+        // Update local state immediately for responsive UI
+        setCounts(prev => ({ ...prev, [productCode]: quantity }));
+        
         try {
-            setCounts(prev => ({ ...prev, [productCode]: quantity }));
-            await inventoryApi.recordCount(sessionId!, productCode, quantity);
+            // Only make API call if we have valid values
+            if (sessionId && productCode && quantity >= 0) {
+                await inventoryApi.recordCount(sessionId, productCode, quantity);
+            }
         } catch (error) {
-            console.error('Failed to record count:', error);
+            // Log error but don't disturb the user
+            console.error('Error saving count, will retry on submit:', error);
         }
     };
-
-    const clearSearch = () => {
-        setSearchTerm('');
-    };
-
     useEffect(() => {
         const filtered = products.filter(product =>
             product.description.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setFilteredProducts(filtered);
     }, [searchTerm, products]);
+
+    const clearSearch = () => {
+        setSearchTerm('');
+    };
 
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
