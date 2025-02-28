@@ -107,7 +107,7 @@ const CountPage: React.FC = () => {
                                 type="number"
                                 value={counts[product.code] || ''}
                                 onChange={(e) => handleCountChange(product.code, Number(e.target.value))}
-                                placeholder={`Enter number in ${product.walkUnit}`}
+                                placeholder={`${product.walkUnit}`}
                                 className="w-24 p-2 border rounded text-center text-gray-700"
                             />
                         </div>
