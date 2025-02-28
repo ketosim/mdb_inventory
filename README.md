@@ -1,6 +1,6 @@
 ## Overview
 
-This inventory management system is designed to help businesses track their inventory, record counts, and generate order summaries based on stock levels and weekly usage.
+This inventory management system is designed to help dominos cbd store track inventory, record counts, and generate order summaries based on stock levels and weekly usage.
 
 ## Features
 
